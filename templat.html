@@ -1,0 +1,26 @@
+<html >
+<head>
+  <title>Predict the Weight</title>  
+</head>
+
+<body>
+ <div>
+	<h1>Predict Weight</h1>
+
+    <form action="{{ url_for('getprediction')}}"method="post">
+    	<input type="text" name="Work_Class" placeholder="Work_Class" required="required" />
+        <input type="text" name="Education" placeholder="Education" required="required" />
+        <input type="text" name="Occupation" placeholder="Occupation" required="required" />
+        <input type="text" name="sex" placeholder="sex" required="required" />
+        <input type="text" name="Hours_per_week" placeholder="Hours_per_week" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+
+   <br>
+   <br>
+   {{ output }}
+
+ </div>
+
+</body>
+</html>
